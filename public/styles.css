@@ -1,0 +1,126 @@
+/* Reset some default styles */
+body,
+h1,
+p,
+label,
+input,
+button,
+table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    /* Light background for neubrutalism */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Heading styles */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #000;
+    /* Bold color for neubrutalism */
+}
+
+/* Form styles */
+div {
+    background: #ffffff;
+    /* White background */
+    border: 4px solid #000;
+    /* Strong border */
+    border-radius: 0;
+    /* No rounded corners */
+    padding: 20px;
+    margin: 20px;
+    width: max-content;
+    box-shadow: 5px 5px 0 #000;
+    /* Simple shadow for depth */
+    border-radius: 10px;
+
+}
+
+/* Input styles */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #000;
+    /* Strong border */
+    border-radius: 0;
+    /* No rounded corners */
+    font-size: 1rem;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    border: 2px solid #000;
+    /* Strong border */
+    border-radius: 0;
+    /* No rounded corners */
+    background: #ffcc00;
+    /* Bold color */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ff9900;
+    /* Darker on hover */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #000;
+    /* Strong border */
+}
+
+th {
+    background: #ffcc00;
+    /* Bold color for header */
+    color: #000;
+    /* Text color */
+}
+
+tr:hover {
+    background: #e0e0e0;
+    /* Light hover effect */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    div {
+        width: 90%;
+        /* Full width on small screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+        /* Smaller heading */
+    }
+
+    button {
+        width: 100%;
+        /* Full width buttons */
+    }
+}
